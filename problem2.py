@@ -6,8 +6,6 @@ run, from the command line, with python problem2.py 4000000
 
 import sys
 
-from itertools import accumulate
-
 def generate_fibonacci_up_to_n(fibonacci, n):
 	next_term = fibonacci[-1] + fibonacci[-2]
 	if next_term < n:
