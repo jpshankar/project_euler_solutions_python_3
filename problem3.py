@@ -17,7 +17,6 @@ def primes_to_sqrt_n(sqrt_n):
 	looks at odd numbers only, because even numbers > 2 can't be prime
 	'''
 	for odd in range(3, sqrt_n + 1, 2):
-		print(f'Testing {odd}')
 		if not any([odd%prime==0 for prime in primes]):
 			primes.append(odd)
 			yield odd
